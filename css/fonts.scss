@@ -1,0 +1,13 @@
+/***  Fonts  ***/
+//***********************************************
+@font-face {
+  font-family: 'HelveticaNeueRegular';
+  src: url('../fonts/helveticaneue-lightcond-webfont.eot');
+  src: url('../fonts/helveticaneue-lightcond-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/helveticaneue-lightcond-webfont.woff') format('woff'),
+  url('../fonts/helveticaneue-lightcond-webfont.ttf') format('truetype'),
+  url('../fonts/helveticaneue-lightcond-webfont.svg#HelveticaNeueRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+$helvLight: 'HelveticaNeueRegular', arial, sans-serif;

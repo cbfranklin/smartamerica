@@ -181,8 +181,11 @@ a {
 .section-block {
   border-top: 3px solid #d2202e;
   padding: 35px 0; }
-  .section-block h2 {
+  .section-block h2 a {
     color: #fff; }
+    .section-block h2 a:hover {
+      text-decoration: underline;
+      color: #fff; }
 
 #challenges {
   margin-top: 300px;
@@ -257,8 +260,10 @@ a {
   display: block;
   padding-bottom: 0; }
 
-#events h2 {
+#events h2 a {
   color: #223447; }
+  #events h2 a:hover {
+    color: #223447; }
 #events .featured-event h4 {
   text-transform: uppercase; }
 #events img {

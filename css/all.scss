@@ -123,7 +123,13 @@ a {
   border-top: 3px solid $red;
   padding: 35px 0;
     h2 {
-      color: #fff;
+        a {
+          color: #fff;
+            &:hover {
+              text-decoration: underline;
+              color: #fff;
+            }
+        }
     }
 }
 #challenges {
@@ -209,7 +215,12 @@ a {
 // end
 #events {
     h2 {
-      color: $dBlue;
+        a {
+          color: $dBlue;
+            &:hover {
+              color: $dBlue;
+            }
+        }
     }
     .featured-event h4 {
       text-transform: uppercase;

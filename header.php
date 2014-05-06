@@ -28,7 +28,8 @@
     <section id="splash">
         <div class="container">
             <header id="logo">
-                <a class="col-md-4" href="<?php bloginfo('url')?>"><img class="img-responsive" src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Smart America Logo"></a>
+                <a class="col-md-4 pull-left" href="<?php bloginfo('url')?>"><img class="img-responsive" src="<?php
+                    bloginfo('template_url'); ?>/images/logo.png" alt="Smart America Logo"></a>
                 <div id="smartAmerica-search" class="pull-right">
                     <?php get_search_form(); ?>
                 </div>

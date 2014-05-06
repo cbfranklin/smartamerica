@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
     <div id="sections-wrap">
-        <div class="container">
-            <section class="section-block" id="challenges">
+        <section class="section-block" id="challenges">
+            <div class="container">
                 <h2><a href="<?php echo get_post_type_archive_link( 'challenge' ); ?>">Challenges</a></h2>
                 <div class="categories">
                     <ul>
@@ -26,8 +26,10 @@
                         <div class="clearfix"></div>
                     </ul>
                 </div>
-            </section>
-            <section class="section-block" id="teams">
+            </div>
+        </section>
+        <section class="section-block" id="teams">
+            <div class="container">
                 <h2><a href="<?php echo get_post_type_archive_link( 'team_projects' ); ?>">Teams</a></h2>
                 <div id="slider-wrap" class="col-md-6 col-md-offset-3">
                     <div id="teams-slider" data-width="500" data-height="240">
@@ -142,8 +144,10 @@
                     </div>
                 </div>
                 <div class="clearfix"></div>
-            </section>
-            <section class="section-block" id="events">
+            </div>
+        </section>
+        <section class="section-block" id="events">
+            <div class="container">
                 <?php $counter = 0;
                 $today = date('Ymd'); ?>
                 <?php $argsEvents = array(
@@ -218,9 +222,8 @@
                     <?php endif; wp_reset_query(); ?>
                                     <div class="clearfix"></div>
                                 </ul>
-
-            </section>
-        </div>
+            </div>
+        </section>
     </div>
 
 

@@ -18,8 +18,8 @@ $(document).ready(function (){
             scrollorama.animate('#jumbotron',{ duration: 500, property:'opacity', start: 1,  end: 0 });
             scrollorama.animate('#jumbotron',{ duration: 200, property:'padding-bottom',start:22, end: 120 });
         }
-        scrollorama.animate('#challenges',{ duration: 200, property:'opacity', end: 1 });
-        scrollorama.animate('.categories img',{ duration: 579, property:'zoom',start:.3, end: 1 });
+        scrollorama.animate('#challenges > *',{ duration: 100, property:'opacity',start:0, end: 1 });
+        scrollorama.animate('.categories img',{ duration: 479, property:'zoom',start:.3, end: 1 });
         scrollorama.animate('#events-bar',{ duration: 1600, property:'margin-top',start: 200, end: 30 });
         scrollorama.animate('.featured-event',{ duration: 1000, property:'zoom',start:.5, end: 1 });
     } else {

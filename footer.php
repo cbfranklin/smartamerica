@@ -1,5 +1,5 @@
-<div class="container">
-    <footer class="section-block" id="footer">
+<footer class="section-block" id="footer">
+    <div class="container">
         <nav role="navigation">
             <?php  $defaults = array(
             'theme_location'  => 'footer_nav',
@@ -13,8 +13,9 @@
             target="_blank"><img
                     src="<?php bloginfo ('template_url'); ?>/images/gsa-logo.png" class="img-responsive"></a>
         </aside>
-    </footer>
-</div>
+    </div>
+</footer>
+
 
 
 	<?php wp_footer(); ?>

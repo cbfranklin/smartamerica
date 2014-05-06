@@ -132,6 +132,15 @@ a {
   opacity: 0.2;
     li {
       list-style: none;
+        a {
+          display: block;
+          padding: 2% 0;
+          width: 96%;
+          height: 100%;
+          &:hover {
+            background: $blue;
+          }
+        }
     }
     li:nth-child(even) {margin-top: 40px;}
     h3 {
@@ -139,15 +148,6 @@ a {
     }
     p {
       color: #fff!important;
-    }
-    a {
-      display: block;
-      padding: 2% 0;
-      width: 96%;
-      height: 100%;
-        &:hover {
-          background: $blue;
-        }
     }
     img {
       margin-right: 20px;

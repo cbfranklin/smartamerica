@@ -14,7 +14,7 @@ $(document).ready(function (){
         scrollorama.animate('#robot-left',{ duration: 500, property:'margin-left', start: 0, end: '-800px' });
         scrollorama.animate('#robot-right',{ duration: 500, property:'margin-right', start: 0, end: '-800px' });
         scrollorama.animate('#jumbotron',{ duration: 500, property:'margin-top', end: 0 });
-        if($(window).width > 768) {
+        if($(window).width() > 768) {
             scrollorama.animate('#jumbotron',{ duration: 500, property:'opacity', start: 1,  end: 0 });
             scrollorama.animate('#jumbotron',{ duration: 200, property:'padding-bottom',start:22, end: 120 });
         }

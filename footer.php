@@ -9,7 +9,9 @@
             );  wp_nav_menu( $defaults ); ?>
         </nav>
         <aside>
-            <i class="pull-left">Site built by &nbsp;</i> <img src="<?php bloginfo('template_url');?>/images/gsa-logo.png" class="img-responsive">
+            <i class="pull-left">Site built by &nbsp;</i><a class="pull-left" href="http://gsa.gov"
+            target="_blank"><img
+                    src="<?php bloginfo ('template_url'); ?>/images/gsa-logo.png" class="img-responsive"></a>
         </aside>
     </footer>
 </div>

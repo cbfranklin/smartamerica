@@ -190,19 +190,19 @@ a {
   opacity: 0.2; }
   #challenges li {
     list-style: none; }
+    #challenges li a {
+      display: block;
+      padding: 2% 0;
+      width: 96%;
+      height: 100%; }
+      #challenges li a:hover {
+        background: #425770; }
   #challenges li:nth-child(even) {
     margin-top: 40px; }
   #challenges h3 {
     margin-bottom: 0; }
   #challenges p {
     color: white !important; }
-  #challenges a {
-    display: block;
-    padding: 2% 0;
-    width: 96%;
-    height: 100%; }
-    #challenges a:hover {
-      background: #425770; }
   #challenges img {
     margin-right: 20px; }
 

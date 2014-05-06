@@ -14,7 +14,7 @@ $(document).ready(function (){
         scrollorama.animate('#robot-left',{ duration: 500, property:'margin-left', start: 0, end: '-800px' });
         scrollorama.animate('#robot-right',{ duration: 500, property:'margin-right', start: 0, end: '-800px' });
         scrollorama.animate('#jumbotron',{ duration: 500, property:'margin-top', end: 0 });
-        scrollorama.animate('#jumbotron',{ duration: 500, property:'opacity', start: 1, end: 0 });
+        scrollorama.animate('#jumbotron',{ duration: 500, property:'opacity', start: 1,  end: 0 });
         scrollorama.animate('#jumbotron',{ duration: 200, property:'padding-bottom',start:22, end: 120 });
         scrollorama.animate('#challenges',{ duration: 200, property:'opacity', end: 1 });
         scrollorama.animate('.categories img',{ duration: 579, property:'zoom',start:.3, end: 1 });

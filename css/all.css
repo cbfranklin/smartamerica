@@ -138,11 +138,12 @@ a {
       padding: 10px;
       border-bottom: 1px solid #eaeaea; }
   #main-nav .mobile-menu {
-    float: right;
-    clear: both;
     display: block;
-    border: 1px solid #eaeaea;
-    margin-top: 10px; }
+    border: 1px solid #223447;
+    margin-top: 10px;
+    padding-right: 50px;
+    background: url(../images/menu-button.png) no-repeat 95% 50%;
+    color: #223447; }
 
 .fixed {
   position: fixed;

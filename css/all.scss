@@ -71,11 +71,12 @@ a {
       }
     }
     .mobile-menu {
-      float: right;
-      clear: both;
       display: block;
-      border: 1px solid #eaeaea;
+      border: 1px solid $dBlue;
       margin-top: 10px;
+      padding-right: 50px;
+      background: url(../images/menu-button.png) no-repeat 95% 50%;
+      color: $dBlue;
     }
 }
 .fixed {

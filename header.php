@@ -36,7 +36,7 @@
         </div>
         <nav class="navbar navbar-default" id="main-nav" role="navigation">
             <div class="container">
-                <button class="mobile-menu visible-xs btn col-xs-2">Menu <i class="glyphicon-chevron-down"></i></button>
+                <button class="mobile-menu visible-xs btn col-xs-2">Menu </button>
                 <?php  $defaults = array(
                         'theme_location'  => 'main_nav',
                         'container'       => false,

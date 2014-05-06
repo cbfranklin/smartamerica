@@ -173,19 +173,20 @@
                                             <img class="img-responsive" src="<?php the_field( "event_featured_image"); ?>" alt="<? the_title();?>">
                                         </figure>
                                         <div class="col-md-6 col-md-offset-1 col-sm-8">
+                                            <h4><?php the_title();?></h4>
                                             <?php if( get_field( "event_end" ) ) { ?>
                                                 <?php $startDate = DateTime::createFromFormat('Ymd',get_field('event_start'));?>
                                                 <?php $endDate = DateTime::createFromFormat('Ymd',get_field('event_end'));?>
-                                                <h4><?php echo $startDate->format('M d');?> - <?php echo $endDate->format('M d, Y');?></h4>
+                                                <i><?php echo $startDate->format('M d');?> - <?php echo $endDate->format('M d, Y');?></i><br>
                                             <?php } else { ?>
                                                 <?php $date = DateTime::createFromFormat('Ymd',get_field('event_start'));?>
-                                                <h4><?php echo $date->format('M d, Y');?></h4>
+                                                <i><?php echo $date->format('M d, Y');?></i><br>
                                             <?php } ?>
                                             <?php if( get_field( "event_excerpt" ) ) { ?>
                                                 <p> <?php the_field( "event_excerpt" );?></p>
-                                            <?php } else {
-                                                echo custom_field_excerpt('event_description',10);
-                                            }?>
+                                            <?php } else { ?>
+                                                <?php echo custom_field_excerpt('event_description',8); ?>
+                                            <?php }?>
                                             <a href="<?php the_permalink(); ?>">Learn More >></a>
                                         </div>
                                     </div>
@@ -208,7 +209,7 @@
                                             <?php if( get_field( "event_excerpt" ) ) { ?>
                                                 <p> <?php the_field( "event_excerpt" );?></p>
                                             <?php } else { ?>
-                                                <?php echo custom_field_excerpt('event_description',8); ?>
+                                                <?php echo custom_field_excerpt('event_description',10); ?>
                                             <?php }?>
                                         </a>
                                     </li>

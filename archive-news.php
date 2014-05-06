@@ -12,7 +12,7 @@
                     while ( $news->have_posts() ) : $news->the_post();?>
                         <div class="entry">
                             <?php if( get_field( "featured_image_custom" ) ) { ?>
-                                <figure class="pull-left col-md-3">
+                                <figure class="pull-left col-md-2">
                                     <img class="img-responsive" src="<?php the_field( "featured_image_custom" ) ?>">
                                 </figure>
                             <?php }?>

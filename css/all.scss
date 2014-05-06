@@ -280,6 +280,11 @@ a {
   border-bottom: 1px solid #eaeaea;
   padding-bottom: 10px;
   margin-bottom: 10px;
+    figure {
+      max-width: 200px;
+      overflow: hidden;
+      padding-right: 20px;
+    }
 }
 
 

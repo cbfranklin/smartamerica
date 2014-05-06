@@ -265,7 +265,8 @@ a {
   max-height: 235px; }
 #events #events-bar {
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  background: #425770; }
   #events #events-bar li {
     background: #425770;
     list-style: none;

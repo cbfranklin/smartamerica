@@ -3,7 +3,7 @@
     <div id="sections-wrap">
         <div class="container">
             <section class="section-block" id="challenges">
-                <h2>Challenges</h2>
+                <h2><a href="<?php echo get_post_type_archive_link( 'challenge' ); ?>">Challenges</a></h2>
                 <div class="categories">
                     <ul>
                         <?php $argsChallenges = array( 'post_type' => 'challenge' );
@@ -28,7 +28,7 @@
                 </div>
             </section>
             <section class="section-block" id="teams">
-                <h2>Teams</h2>
+                <h2><a href="<?php echo get_post_type_archive_link( 'team_projects' ); ?>">Teams</a></h2>
                 <div id="slider-wrap" class="col-md-6 col-md-offset-3">
                     <div id="teams-slider" data-width="500" data-height="240">
                         <?php $argsTeams = array( 'post_type' => 'team_projects', 'orderby' => 'rand' );
@@ -163,7 +163,7 @@
                     )
                 );
                 $events = new WP_Query( $argsEvents ); ?>
-                    <h2>Events</h2>
+                    <h2><a href="<?php echo get_post_type_archive_link( 'event' ); ?>">Events</a></h2>
                     <?php if ( have_posts() ) :
                         while ( $events->have_posts() ) : $events->the_post();?>
                             <?php if ($counter == 0) { ?>
@@ -216,8 +216,9 @@
                                 <?php } ?>
                         <?php endwhile; ?>
                     <?php endif; wp_reset_query(); ?>
+                                    <div class="clearfix"></div>
                                 </ul>
-                    <div class="clearfix"></div>
+
             </section>
         </div>
     </div>

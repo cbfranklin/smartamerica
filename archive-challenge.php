@@ -11,6 +11,11 @@
                 if ( have_posts() ) :
                     while ( $challenge->have_posts() ) : $challenge->the_post();?>
                         <div class="entry">
+                            <?php if( get_field( "challenge_icon" ) ) { ?>
+                                <figure class="pull-left col-md-3">
+                                    <img class="img-responsive" src="<?php the_field( "challenge_icon" ) ?>">
+                                </figure>
+                            <?php }?>
                             <h4><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
                             <?php if( get_field( "challenge_excerpt" ) ) { ?>
                                 <p> <?php the_field( "challenge_excerpt" );?></p>

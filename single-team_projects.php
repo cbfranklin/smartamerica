@@ -15,6 +15,7 @@
         </div>
     </div>
     <div class="slide-out">
+        <button type="button" class="close" aria-hidden="true">&times;</button>
         <a href="<?php echo get_post_type_archive_link( 'team_projects' ); ?>"><< View All Teams</a>
     </div>
 

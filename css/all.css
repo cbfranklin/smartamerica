@@ -317,7 +317,15 @@ a {
   bottom: 20%;
   padding: 30px;
   background: #f4f5f6;
-  z-index: 99; }
+  z-index: 99;
+  -webkit-box-shadow: 1px 1px 1px #223447;
+  -moz-box-shadow: 1px 1px 1px #223447;
+  box-shadow: 1px 1px 1px #223447; }
+  .slide-out .close {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #d2202e; }
 
 .entry {
   border-bottom: 1px solid #eaeaea;

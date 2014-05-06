@@ -99,7 +99,7 @@ function flyOut() {
         if($(window).scrollTop() + $(window).height() > $(document).height() - 250) {
             if($('.slide-out').length != 0) {
                 $('.slide-out').fadeIn(300);
-                $('.close-popup').click(function() {
+                $('.close').click(function() {
                     $('.slide-out').animate({right: '-500px'},500,function() {
                         $(this).remove();
                     });

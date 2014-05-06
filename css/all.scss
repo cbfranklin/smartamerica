@@ -286,6 +286,14 @@ a {
   padding: 30px;
   background: $gray;
   z-index: 99;
+  @include box-shadow(1px 1px 1px, $dBlue);
+    .close {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      color: $red;
+
+    }
 }
 .entry {
   border-bottom: 1px solid #eaeaea;

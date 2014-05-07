@@ -58,12 +58,12 @@
                 <img class="hidden-xs img-responsive" id="robot-left" src="<?php bloginfo('template_url');?>/images/robot-left.png" alt="">
                 <img class="hidden-xs img-responsive" id="robot-right" src="<?php bloginfo('template_url');?>/images/robot-right.png" alt="">
                 <div class="hero col-md-7 col-lg-6 col-md-offset-3 " id="jumbotron">
-                    <h1><a href="<?php bloginfo('url');?>/about">About the Challenge</a></h1>
-                        <?php if ( have_posts() ) :
-                            while ( have_posts() ) : the_post(); ?>
+                    <?php if ( have_posts() ) :
+                        while ( have_posts() ) : the_post(); ?>
+                            <h1><a href="<?php bloginfo('url');?>/about"><?php the_title();?></a></h1>
                                  <?php the_content();?>
-                            <?php endwhile; ?>
-                        <?php endif;?>
+                        <?php endwhile; ?>
+                    <?php endif;?>
                 </div>
             </div>
         <?php } ?>

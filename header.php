@@ -60,7 +60,12 @@
                 <div class="hero col-md-7 col-lg-6 col-md-offset-3 " id="jumbotron">
                     <?php if ( have_posts() ) :
                         while ( have_posts() ) : the_post(); ?>
-                            <h1><a href="<?php bloginfo('url');?>/about"><?php the_title();?></a></h1>
+
+                            <?php if (get_field( "page_link_hero" )) { ?>
+                                <h1><a href="<?php the_field( "page_link_hero" )?>"><?php the_title();?></a></h1>
+                            <?php } else { ?>
+                                <h1><?php the_title();?></h1>
+                            <?php } ?>
                                  <?php the_content();?>
                         <?php endwhile; ?>
                     <?php endif;?>

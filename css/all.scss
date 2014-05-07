@@ -118,6 +118,7 @@ a {
     }
     #robot-left {
       top: 0;
+      z-index: -1;
       left: -9999px;
     }
     #robot-right {

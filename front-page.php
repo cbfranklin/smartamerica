@@ -32,7 +32,7 @@
             <div class="container">
                 <h2><a href="<?php echo get_post_type_archive_link( 'team_projects' ); ?>">Teams</a></h2>
                 <div id="slider-wrap" class="col-md-6 col-md-offset-3">
-                    <div id="teams-slider" data-width="500" data-height="240">
+                    <div id="teams-slider">
                         <?php $argsTeams = array( 'post_type' => 'team_projects', 'orderby' => 'rand' );
                         $teams = new WP_Query( $argsTeams );
                         if ( have_posts() ) :
@@ -138,6 +138,7 @@
                                         }?>
                                             <a href="<?php the_permalink();?>">Visit the team page >></a>
                                     </header>
+                                    <div class="clearfix"></div>
                                 </article>
                             <?php endwhile; ?>
                         <?php endif; wp_reset_query(); ?>

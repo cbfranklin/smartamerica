@@ -64,7 +64,7 @@ function fixedNav() {
 function slideShow() {
     $('#teams-slider').slidesjs({
         width: $(this).attr('data-width'),
-        height: $(this).attr('data-height'),
+        autoHeight: true,
         navigation: {
             active: false
         },

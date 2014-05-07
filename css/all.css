@@ -235,22 +235,24 @@ a {
   background: #971c23;
   position: relative; }
 
-#slider-wrap article {
-  text-align: center;
-  color: #fff; }
-  #slider-wrap article h3 {
-    text-transform: uppercase;
-    margin-bottom: 0; }
-  #slider-wrap article h6 {
-    margin-top: 3px; }
-  #slider-wrap article a {
-    color: #fff;
-    font-weight: bold; }
-    #slider-wrap article a:hover {
-      text-decoration: underline; }
-  #slider-wrap article p {
-    color: #f4f5f6;
-    padding: 15px 0 10px; }
+#teams-slider {
+  overflow-y: visible !important; }
+  #teams-slider article {
+    text-align: center;
+    color: #fff; }
+    #teams-slider article h3 {
+      text-transform: uppercase;
+      margin-bottom: 0; }
+    #teams-slider article h6 {
+      margin-top: 3px; }
+    #teams-slider article a {
+      color: #fff;
+      font-weight: bold; }
+      #teams-slider article a:hover {
+        text-decoration: underline; }
+    #teams-slider article p {
+      color: #f4f5f6;
+      padding: 15px 0 10px; }
 
 .slidesjs-pagination {
   text-align: center;
@@ -319,6 +321,17 @@ a {
       display: block; }
     #events #events-bar li:hover {
       background: #223447; }
+
+.divide-events {
+  background: #f4f5f6 !important;
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 40px 0;
+  color: #223447;
+  font-family: "HelveticaNeueRegular", arial, sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em; }
 
 /***  Inner Page Template ***/
 .page-content header {

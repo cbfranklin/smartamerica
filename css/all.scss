@@ -19,7 +19,7 @@ body {
 }
 h1 {
   font-family: $helvLight;
-  font-size: 40px;
+  font-size: 28px;
   text-transform: uppercase;
   padding-bottom: 10px;
   text-align: center;
@@ -89,6 +89,7 @@ a {
 }
 .search-form {
   position: relative;
+  padding-top: 15px;
     .search-submit {
       background: none;
       text-indent: -9999px;
@@ -304,7 +305,7 @@ a {
   position: fixed;
   display: none;
   right: 0;
-  bottom: 20%;
+  bottom: 15%;
   padding: 30px;
   background: $gray;
   z-index: 99;
@@ -365,6 +366,9 @@ a {
 /***  MEDIA QUERIES ***/
 //***********************************************
 @media(min-width:768px){ /* medium */
+  h1 {
+    font-size: 40px;
+  }
   #main-nav {
     background: none;
     ul {
@@ -390,6 +394,9 @@ a {
     #secondary-nav {
       font-size: .85em;
     }
+  }
+  .search-form {
+    padding-top: 0;
   }
   #jumbotron {
     margin-top: 175px;

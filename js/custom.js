@@ -97,7 +97,7 @@ function mobileMenu() {
 
 function flyOut() {
     $(window).scroll(function(){
-        if($(window).scrollTop() + $(window).height() > $(document).height() - 250) {
+        if($(window).scrollTop() + $(window).height() > $(document).height() - 150) {
             if($('.slide-out').length != 0) {
                 $('.slide-out').fadeIn(300);
                 $('.close').click(function() {

@@ -40,7 +40,7 @@
                                 <article>
                                     <header>
                                         <hgroup>
-                                            <h3><?php the_title(); ?></h3>
+                                            <h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
                                             <h6>
                                             <?php
                                                 $leads = get_field( "team_leads" );
@@ -75,13 +75,13 @@
                                                     <?php } ?>
 
                                                     <?php if (get_field( "team_lead_email_2" )) { ?>
-                                                        | <a href="mailto:<?php the_field ('team_lead_email_2')
+                                                       &nbsp; | &nbsp;<a href="mailto:<?php the_field ('team_lead_email_2')
                                                     ?>"><?php the_field('team_lead_name_2' )?></a>
                                                         <?php if (get_field( "team_lead_misc_2" )) { ?>
                                                             ,&nbsp; <?php the_field( "team_lead_misc_2" )?>
                                                         <?php }  ?>
                                                     <?php } else { ?>
-                                                        | <?php the_field('team_lead_name_2' )?>
+                                                        &nbsp; | &nbsp; <?php the_field('team_lead_name_2' )?>
                                                         <?php if (get_field( "team_lead_misc_2" )) { ?>
                                                             ,&nbsp; <?php the_field( "team_lead_misc_2" )?>
                                                         <?php } ?>
@@ -103,26 +103,26 @@
                                                     <?php } ?>
 
                                                     <?php if (get_field( "team_lead_email_2" )) { ?>
-                                                        | <a href="mailto:<?php the_field ('team_lead_email_2')
+                                                        &nbsp; | &nbsp; <a href="mailto:<?php the_field ('team_lead_email_2')
                                                         ?>"><?php the_field('team_lead_name_2' )?></a>
                                                         <?php if (get_field( "team_lead_misc_2" )) { ?>
                                                             ,&nbsp; <?php the_field( "team_lead_misc_2" )?>
                                                         <?php }  ?>
                                                     <?php } else { ?>
-                                                        | <?php the_field('team_lead_name_2' )?>
+                                                        &nbsp; | &nbsp; <?php the_field('team_lead_name_2' )?>
                                                         <?php if (get_field( "team_lead_misc_2" )) { ?>
                                                             ,&nbsp; <?php the_field( "team_lead_misc_2" )?>
                                                         <?php } ?>
                                                     <?php } ?>
 
                                                     <?php if (get_field( "team_lead_email_3" )) { ?>
-                                                        | <a href="mailto:<?php the_field ('team_lead_email_3')
+                                                        &nbsp; | &nbsp; <a href="mailto:<?php the_field ('team_lead_email_3')
                                                         ?>"><?php the_field('team_lead_name_3' )?></a>
                                                         <?php if (get_field( "team_lead_misc_3" )) { ?>
                                                             ,&nbsp; <?php the_field( "team_lead_misc_3" )?>
                                                         <?php }  ?>
                                                     <?php } else { ?>
-                                                        | <?php the_field('team_lead_name_3' )?>
+                                                        &nbsp; | &nbsp; <?php the_field('team_lead_name_3' )?>
                                                         <?php if (get_field( "team_lead_misc_3" )) { ?>
                                                             ,&nbsp; <?php the_field( "team_lead_misc_3" )?>
                                                         <?php } ?>

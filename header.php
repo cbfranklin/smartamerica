@@ -15,7 +15,7 @@
     <meta property="og:description" content="What's this site all about?">
     <meta property="og:type" content="Website">
     <meta property="og:url" content="http://webaddress.com">    -->
-	<title><?php bloginfo('name'); ?> | <?php is_home() ? bloginfo('description') : wp_title(''); ?></title>	
+    <title><?php wp_title(' '); ?><?php if(wp_title(' ', false)) { echo ' &raquo; '; } ?><?php bloginfo('name'); ?></title>
 	<link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/images/favicon.ico">
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS2 Feed" href="<?php bloginfo('rss2_url'); ?>">  
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">  

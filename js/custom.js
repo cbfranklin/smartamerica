@@ -64,11 +64,21 @@ function fixedNav() {
 function slideShow() {
     $('#teams-slider').slidesjs({
         width: $(this).attr('data-width'),
-        autoHeight: true,
+        height: $(this).attr('data-height'),
         navigation: {
             active: false
         },
-        auto : 10000
+        auto : 10000,
+        callback: {
+            loaded: function(number) {
+                $( '.slidesjs-pagination-item' ).each( function( index, element ) {
+                    var target = $( element ).find( 'a' ),
+                        title    = $('.slidesjs-slide').eq(index).children('header').find('a').text();
+                        console.log(title)
+                    $( target ).attr('title',title );
+                });
+            }
+        }
     });
 }
 

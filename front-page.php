@@ -40,7 +40,7 @@
                                 <article>
                                     <header>
                                         <hgroup>
-                                            <h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
+                                            <h3><a class="team-title" href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
                                             <h6>
                                             <?php
                                                 $leads = get_field( "team_leads" );

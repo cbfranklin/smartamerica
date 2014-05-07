@@ -74,7 +74,6 @@ function slideShow() {
                 $( '.slidesjs-pagination-item' ).each( function( index, element ) {
                     var target = $( element ).find( 'a' ),
                         title    = $('.slidesjs-slide').eq(index).children('header').find('a').text();
-                        console.log(title)
                     $( target ).attr('title',title );
                 });
             }

@@ -9,6 +9,24 @@
 		</style>
 	<?php }
 	add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+// REMOVE MENU ITEMS
+function remove_acf_menu(){
+    $admins = array(
+        'adam.pflantzer'
+    );
+    $current_user = wp_get_current_user();
+    if( !in_array( $current_user->user_login, $admins ) )
+    {
+        remove_menu_page('edit.php?post_type=acf');
+        remove_menu_page('tools.php');
+        remove_menu_page('edit-comments.php');
+        remove_menu_page('edit.php');
+        remove_menu_page('themes.php');
+    }
+}
+add_action( 'admin_menu', 'remove_acf_menu', 999 );
+
 // ENQUEUE SCRIPTS
 	add_action( 'wp_enqueue_scripts', 'load_javascript_files' ); 
 	function load_javascript_files() {

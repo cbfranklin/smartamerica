@@ -74,11 +74,12 @@ function slideShow() {
 
 function robotArms() {
         if($(window).width() >= 1200) {
-            $('#robot-right').animate({right : '101px',opacity: 1},2000);
+            $('#robot-right').animate({right : '15px',opacity: 1},2000);
         } else if($(window).width() > 992 && $(window).width() < 1200) {
-            $('#robot-right').animate({right : '-99px',opacity: 1},2000);
+            $('#robot-right').animate({right : '-210px',opacity: 1},2000);
         } else if($(window).width() > 768 && $(window).width() < 992) {
-            $('#robot-right').animate({right : '-319px',opacity: 1},2000);
+            $('#robot-right').animate({right : '-349px',opacity: 1},2000);
+            $('#robot-right').animate({top : '-105px',opacity: 1},2000);
         } else {
         }
 }

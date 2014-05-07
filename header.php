@@ -58,7 +58,7 @@
                 <img class="hidden-xs img-responsive" id="robot-left" src="<?php bloginfo('template_url');?>/images/robot-left.png" alt="">
                 <img class="hidden-xs img-responsive" id="robot-right" src="<?php bloginfo('template_url');?>/images/robot-right.png" alt="">
                 <div class="hero col-md-7 col-lg-6 col-md-offset-3 " id="jumbotron">
-                    <h1>About the Challenge</h1>
+                    <h1><a href="<?php bloginfo('url');?>/about">About the Challenge</a></h1>
                         <?php if ( have_posts() ) :
                             while ( have_posts() ) : the_post(); ?>
                                  <?php the_content();?>

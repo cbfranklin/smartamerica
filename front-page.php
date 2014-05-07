@@ -174,10 +174,10 @@
                                 <article class="featured-event col-md-10 col-md-offset-1 ">
                                     <div class="row">
                                         <figure class="col-md-4 col-md-offset-1 col-sm-4">
-                                            <img class="img-responsive" src="<?php the_field( "event_featured_image"); ?>" alt="<? the_title();?>">
+                                            <a href="<?php the_permalink();?>"><img class="img-responsive" src="<?php the_field( "event_featured_image"); ?>" alt="<? the_title(); ?>"></a>
                                         </figure>
                                         <div class="col-md-6 col-md-offset-1 col-sm-8">
-                                            <h4><?php the_title();?></h4>
+                                            <h4><a href="<?php the_permalink();?>"><?php the_title();?></a></h4>
                                             <?php if( get_field( "event_end" ) ) { ?>
                                                 <?php $startDate = DateTime::createFromFormat('Ymd',get_field('event_start'));?>
                                                 <?php $endDate = DateTime::createFromFormat('Ymd',get_field('event_end'));?>

@@ -9,7 +9,7 @@
                 <?php
                 $temp = $teams;
                 $teams = null;
-                $argsTeams = array( 'post_type' => 'team_projects', 'posts_per_page' => 12, 'paged' => $paged );
+                $argsTeams = array( 'post_type' => 'team_projects', 'posts_per_page' => 12, 'paged' => $paged, 'orderby' => 'title', 'order' => 'asc' );
                 $teams = new WP_Query( $argsTeams );
                     while ( $teams->have_posts() ) : $teams->the_post();?>
 

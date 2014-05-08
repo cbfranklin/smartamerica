@@ -6,10 +6,13 @@
                 <h1>Teams</h1>
             </header>
             <div id="main">
-                <?php $argsTeams = array( 'post_type' => 'team_projects' );
+                <?php
+                $temp = $teams;
+                $teams = null;
+                $argsTeams = array( 'post_type' => 'team_projects', 'posts_per_page' => 12, 'paged' => $paged );
                 $teams = new WP_Query( $argsTeams );
-                if ( have_posts() ) :
                     while ( $teams->have_posts() ) : $teams->the_post();?>
+
                         <div class="entry">
                             <?php if( get_field( "featured_image_custom" ) ) { ?>
                                 <figure class="pull-left col-md-2">
@@ -26,7 +29,13 @@
                             <div class="clearfix"></div>
                         </div>
                     <?php endwhile; ?>
-                <?php endif; wp_reset_query(); ?>
+                    <nav class="navigation">
+                        <?php wpbeginner_numeric_posts_nav(); ?>
+                    </nav>
+                    <?php
+                    $teams = null;
+                    $teams = $temp;  // Reset
+                    ?>
             </div>
         </div>
     </div>

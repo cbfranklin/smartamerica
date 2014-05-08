@@ -6,9 +6,11 @@
                 <h1>News</h1>
             </header>
             <div id="main">
-                <?php $argsNews = array( 'post_type' => 'news' );
+                <?php
+                $temp = $news;
+                $news = null;
+                $argsNews = array( 'post_type' => 'news','posts_per_page' => 12, 'paged' => $paged );
                 $news = new WP_Query( $argsNews );
-                if ( have_posts() ) :
                     while ( $news->have_posts() ) : $news->the_post();?>
                         <div class="entry">
                             <?php if( get_field( "featured_image_custom" ) ) { ?>
@@ -25,7 +27,13 @@
                             <div class="clearfix"></div>
                         </div>
                     <?php endwhile; ?>
-                <?php endif; wp_reset_query(); ?>
+                    <nav class="navigation">
+                        <?php wpbeginner_numeric_posts_nav(); ?>
+                    </nav>
+                    <?php
+                    $news = null;
+                    $news = $temp;  // Reset
+                    ?>
             </div>
         </div>
     </div>

@@ -6,9 +6,11 @@
                 <h1>Challenges</h1>
             </header>
             <div id="main">
-                <?php $argsChallenge = array( 'post_type' => 'challenge' );
+                <?php
+                $temp = $challenge;
+                $challenge = null;
+                $argsChallenge = array( 'post_type' => 'challenge', 'posts_per_page' => 12, 'paged' => $paged );
                 $challenge = new WP_Query( $argsChallenge );
-                if ( have_posts() ) :
                     while ( $challenge->have_posts() ) : $challenge->the_post();?>
                         <div class="entry">
                             <?php if( get_field( "challenge_icon" ) ) { ?>
@@ -24,7 +26,13 @@
                             }?>
                         </div>
                     <?php endwhile; ?>
-                <?php endif; wp_reset_query(); ?>
+                    <nav class="navigation">
+                        <?php wpbeginner_numeric_posts_nav(); ?>
+                    </nav>
+                    <?php
+                    $challenge = null;
+                    $challenge = $temp;  // Reset
+                    ?>
             </div>
         </div>
     </div>

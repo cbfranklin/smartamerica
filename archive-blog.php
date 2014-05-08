@@ -6,9 +6,11 @@
                 <h1>Smart America Blog</h1>
             </header>
             <div id="main">
-                <?php $argsBlog = array( 'post_type' => 'blog' );
+                <?php
+                $temp = $blogs;
+                $blogs = null;
+                $argsBlog = array( 'post_type' => 'blog', 'posts_per_page' => 12, 'paged' => $paged );
                 $blogs = new WP_Query( $argsBlog );
-                if ( have_posts() ) :
                     while ( $blogs->have_posts() ) : $blogs->the_post();?>
                         <div class="entry">
                             <?php if( get_field( "featured_image_custom" ) ) { ?>
@@ -21,7 +23,13 @@
                             <div class="clearfix"></div>
                         </div>
                     <?php endwhile; ?>
-                <?php endif; wp_reset_query(); ?>
+                    <nav class="navigation">
+                        <?php wpbeginner_numeric_posts_nav(); ?>
+                    </nav>
+                    <?php
+                    $blogs = null;
+                    $blogs = $temp;  // Reset
+                    ?>
             </div>
         </div>
     </div>

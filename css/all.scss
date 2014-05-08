@@ -342,7 +342,39 @@ a {
       padding-right: 20px;
     }
 }
+//pagination
+.navigation {
+  margin-top: 75px;
+  text-align: center;
+    ul {
+      padding: 0;
+    }
+}
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  color: #fff;
+  text-decoration:none;
+}
 
+.navigation li {
+  display: inline;
+}
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  background-color: $blue;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.navigation li a:hover,
+.navigation li.active a {
+  background-color: $dBlue;
+}
 
 /***  Footer ***/
 //***********************************************

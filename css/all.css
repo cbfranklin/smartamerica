@@ -372,6 +372,34 @@ a {
     overflow: hidden;
     padding-right: 20px; }
 
+.navigation {
+  margin-top: 75px;
+  text-align: center; }
+  .navigation ul {
+    padding: 0; }
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  color: #fff;
+  text-decoration: none; }
+
+.navigation li {
+  display: inline; }
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  background-color: #425770;
+  cursor: pointer;
+  padding: 12px; }
+
+.navigation li a:hover,
+.navigation li.active a {
+  background-color: #223447; }
+
 /***  Footer ***/
 #footer {
   background: #223447;

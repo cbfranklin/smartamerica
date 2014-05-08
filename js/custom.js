@@ -73,7 +73,7 @@ function slideShow() {
             loaded: function(number) {
                 $( '.slidesjs-pagination-item' ).each( function( index, element ) {
                     var target = $( element ).find( 'a' ),
-                        title    = $('.slidesjs-slide').eq(index).children('header').find('a').text();
+                        title    = $('.slidesjs-slide').eq(index).find('h3 a').text();
                     $( target ).attr('title',title );
                 });
             }

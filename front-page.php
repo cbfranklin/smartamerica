@@ -33,7 +33,7 @@
                 <h2><a href="<?php echo get_post_type_archive_link( 'team_projects' ); ?>">Teams</a></h2>
                 <div id="slider-wrap" class="col-md-6 col-md-offset-3">
                     <div id="teams-slider">
-                        <?php $argsTeams = array( 'post_type' => 'team_projects', 'orderby' => 'rand' );
+                        <?php $argsTeams = array( 'post_type' => 'team_projects', 'orderby' => 'rand', 'posts_per_page' => 99 );
                         $teams = new WP_Query( $argsTeams );
                         if ( have_posts() ) :
                             while ( $teams->have_posts() ) : $teams->the_post();?>

@@ -69,7 +69,7 @@ function slideShow() {
         navigation: {
             active: false
         },
-        auto : 10000,
+        //auto : 10000,
         callback: {
             loaded: function(number) {
                 $( '.slidesjs-pagination-item' ).each( function( index, element ) {

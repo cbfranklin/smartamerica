@@ -1,5 +1,6 @@
 (function($){})(window.jQuery);
 $(document).ready(function (){
+    submitted = false;
 
     //home splash animations
     $('#robot-left').animate({left : 0,opacity: 1},2000);

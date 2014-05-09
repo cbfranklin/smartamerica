@@ -53,7 +53,7 @@
                     'post_type' => 'event',
                     'meta_key' => 'event_start',
                     'orderby' => 'meta_value_num',
-                    'order' => 'ASC',
+                    'order' => 'DESC',
                     'meta_query' => array(
                         array(
                             'key' => 'event_start',

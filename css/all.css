@@ -117,6 +117,24 @@ a {
   margin-left: auto;
   margin-right: auto; }
 
+.form-group .glyphicon-asterisk {
+  position: absolute;
+  right: 0;
+  font-size: .5em;
+  color: red; }
+
+.modal-header {
+  background: #d2202e; }
+  .modal-header h2 {
+    color: #fff; }
+
+.modal-body .alert {
+  margin: 0 15px;
+  padding: 0 5px; }
+
+.modal-body #form-submit {
+  background: #425770; }
+
 /***  Splash Home ***/
 #logo {
   padding: 20px 0 10px; }
@@ -200,6 +218,9 @@ a {
   #jumbotron p {
     font-size: 16px;
     color: #223447; }
+
+#contact-message .form-group {
+  margin-bottom: 15px; }
 
 /***  Home Sections ***/
 .section-block {

@@ -35,6 +35,7 @@ $(document).ready(function (){
     slideShow();
     mobileMenu();
     flyOut();
+    email_Helper();
 
 
 });
@@ -119,4 +120,22 @@ function flyOut() {
             $('.slide-out').fadeOut(300);
         }
     });
+}
+
+
+// email form
+function email_Helper() {
+    $('#hidden_iframe').load(function(){
+        if(submitted == true){
+            $('#contact-form').slideUp(300,function() {
+                $('.alert').fadeIn(300,function() {
+                    $(this).removeClass('alert-warning').addClass('alert-success').text('Thanks for contacting us.').fadeIn(500);
+                })
+            });
+        }
+    });
+
+    $('#contact-message').modal({
+        show: false
+    })
 }

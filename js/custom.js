@@ -78,6 +78,12 @@ function slideShow() {
                     $( target ).attr('title',title );
                 });
             }
+        },
+        play: {
+            effect: "slide",
+            // [string] Can be either "slide" or "fade".
+            interval: 7000,
+            auto: true
         }
     });
 }

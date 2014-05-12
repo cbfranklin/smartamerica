@@ -136,7 +136,9 @@ function email_Helper() {
         if(submitted == true){
             $('#contact-form').slideUp(300,function() {
                 $('.alert').fadeIn(300,function() {
-                    $(this).removeClass('alert-warning').addClass('alert-success').text('Thanks for contacting us.').fadeIn(500);
+                    $(this).removeClass('alert-warning').addClass('alert-success').html('<h5>A TEST submission was made to this <a href="https://docs.google.com/spreadsheet/ccc?key=0AkPkNgTYyNARdHM2VWd4Q1pfaVAxV0s2QnUzVzZmZmc&usp=drive_web#gid=0" target="_blank">Google Spreadsheet</a></h5>').fadeIn(500,function() {
+                        $('.modal-body .close').delay(4000).click();
+                    });
                 })
             });
         }

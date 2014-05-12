@@ -15,7 +15,7 @@
         </aside>
     </div>
 </footer>
-    <?php include_once('contact-form.php');?>
+    <?php //include_once('contact-form.php');?>
 
     <?php wp_footer(); ?>
 </body>

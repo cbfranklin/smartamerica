@@ -12,7 +12,7 @@
                 $argsChallenge = array( 'post_type' => 'challenge', 'posts_per_page' => 12, 'paged' => $paged );
                 $challenge = new WP_Query( $argsChallenge );
                     while ( $challenge->have_posts() ) : $challenge->the_post();?>
-                        <div class="entry">
+                        <div class="entry" style="min-height:100px;">
                             <?php if( get_field( "challenge_icon" ) ) { ?>
                                 <figure class="pull-left col-md-2">
                                     <img class="img-responsive" src="<?php the_field( "challenge_icon" ) ?>">

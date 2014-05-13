@@ -144,16 +144,6 @@ function wpbeginner_numeric_posts_nav() {
 
 }
 
-// ADD NEW ATTRIBUTE POSSIBILITIES TO MENU
-add_filter( 'nav_menu_link_attributes', 'wpse121123_contact_menu_atts', 10, 3 );
-function wpse121123_contact_menu_atts( $atts, $item, $args )
-{
-    $menu_target = 78; //13;
-    if ($item->ID == $menu_target) {
-        $atts['data-toggle'] = 'modal';
-        $atts['data-target'] = '#contact-message';
-    }
-    return $atts;
-}
+
 
 

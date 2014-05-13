@@ -2,7 +2,7 @@
 $(document).ready(function (){
     submitted = false;
 
-    //home splash animations
+    /*home splash animations
     $('#robot-left').animate({left : 0,opacity: 1},2000);
     robotArms();
     $('#jumbotron').delay(1000).animate({opacity : 1},2000);
@@ -25,7 +25,7 @@ $(document).ready(function (){
        // scrollorama.animate('.featured-event',{ duration: 1000, property:'zoom',start:.5, end: 1 });
     } else {
         scrollorama.animate('.page-content header',{ duration: 400, property:'margin-bottom', end: 100 });
-    }
+    }*/
 
 
 

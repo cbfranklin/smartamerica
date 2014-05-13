@@ -2,7 +2,7 @@
 $(document).ready(function (){
     submitted = false;
 
-    /*home splash animations
+    //home splash animations
     $('#robot-left').animate({left : 0,opacity: 1},2000);
     robotArms();
     $('#jumbotron').delay(1000).animate({opacity : 1},2000);
@@ -21,11 +21,13 @@ $(document).ready(function (){
             scrollorama.animate('#challenges > *',{ duration: 90, property:'opacity',start:0, end: 1 });
         }
         scrollorama.animate('.categories img',{ duration: 300, property:'zoom',start:.3, end: 1 });
-        scrollorama.animate('#events-bar',{ duration: 1600, property:'margin-top',start: 200, end: 30 });
-       // scrollorama.animate('.featured-event',{ duration: 1000, property:'zoom',start:.5, end: 1 });
+        if($('#events-bar').length > 0) {
+            scrollorama.animate('#events-bar',{ duration: 1600, property:'margin-top',start: 200, end: 30 });
+        }
+        scrollorama.animate('.featured-event',{ duration: 1000, property:'zoom',start:.5, end: 1 });
     } else {
         scrollorama.animate('.page-content header',{ duration: 400, property:'margin-bottom', end: 100 });
-    }*/
+    }
 
 
 

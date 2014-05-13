@@ -8,17 +8,19 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta stuff
+    <meta name="description" content="What's this site all about?">
     <meta property="og:title" content="<?php bloginfo('name'); ?> | <?php is_home() ? bloginfo('description') : wp_title(''); ?>">
-    <meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/logo.png">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="What's this site all about?">
     <meta property="og:type" content="Website">
-    <meta property="og:url" content="http://smartamerica.org">
+    <meta property="og:url" content="http://webaddress.com">    -->
     <title><?php wp_title(' '); ?><?php if(wp_title(' ', false)) { echo ' &raquo; '; } ?><?php bloginfo('name'); ?></title>
 	<link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/images/favicon.ico">
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS2 Feed" href="<?php bloginfo('rss2_url'); ?>">  
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">  
 	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/all.css">
-    <script id="_fed_an_js_tag" type="text/javascript" src="http://m.gsa.gov/m/external/resources/js/dap.js?agency=GSA"></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -18,8 +18,7 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">  
 	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/all.css">
-    <!--<script id="_fed_an_js_tag" type="text/javascript" src="http://m.gsa.gov/m/external/resources/js/dap
-    .js?agency=GSA"></script>-->
+    <script id="_fed_an_js_tag" type="text/javascript" src="http://m.gsa.gov/m/external/resources/js/dap.js?agency=GSA"></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

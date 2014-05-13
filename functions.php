@@ -10,7 +10,7 @@
 	<?php }
 	add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
-/* REMOVE MENU ITEMS
+// REMOVE MENU ITEMS
 function remove_acf_menu(){
     $admins = array(
         'adam.pflantzer',
@@ -26,7 +26,7 @@ function remove_acf_menu(){
         //remove_menu_page('themes.php');
     }
 }
-add_action( 'admin_menu', 'remove_acf_menu', 999 ); */
+add_action( 'admin_menu', 'remove_acf_menu', 999 );
 
 // ENQUEUE SCRIPTS
 	add_action( 'wp_enqueue_scripts', 'load_javascript_files' ); 
